@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Registro de Usuario</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <header>
+    <h1>Registro de Usuario</h1>
+    <nav>
+      <a href="#personal">Personal</a>
+      <a href="#contacto">Contacto</a>
+      <a href="#cuenta">Cuenta</a>
+      <button type="button">Iniciar sesión</button>
+    </nav>
+  </header>
+
+  <main>
+    <form>
+
+      <section id="personal">
+        <h2>Información Personal</h2>
+
+        <label>Nombre</label>
+        <input type="text" required><br>
+
+        <label>Apellido</label>
+        <input type="text" required><br>
+
+        <label>Fecha de Nacimiento</label>
+        <input type="date" required><br>
+
+        <label>Género</label><br>
+        <input type="radio" name="genero" required> Masculino
+        <input type="radio" name="genero"> Femenino
+        <input type="radio" name="genero"> Otro
+      </section>
+
+      <section id="contacto">
+        <h2>Información de Contacto</h2>
+
+        <label>Correo Electrónico</label>
+        <input type="email" required><br>
+
+        <label>Teléfono</label>
+        <input type="tel" required><br>
+
+        <label>Dirección</label><br>
+        <textarea rows="3"></textarea>
+      </section>
+
+      <section id="cuenta">
+        <h2>Información de Cuenta</h2>
+
+        <label>Nombre de Usuario</label>
+        <input type="text" required><br>
+
+        <label>Contraseña</label>
+        <input type="password" required><br>
+
+        <label>Confirmar Contraseña</label>
+        <input type="password" required><br>
+
+        <label>Color Favorito</label>
+        <select>
+          <option>Rojo</option>
+          <option>Azul</option>
+          <option>Verde</option>
+          <option>Amarillo</option>
+        </select><br>
+
+        <input type="checkbox" required> Acepto los <u>Términos y Condiciones</u>
+      </section>
+
+      <button type="submit">Registrarme</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; Formulario con hoja de estilo</p>
+  </footer>
+
+</body>
+</html>
